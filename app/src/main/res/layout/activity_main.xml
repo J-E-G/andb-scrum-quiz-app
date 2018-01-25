@@ -9,103 +9,174 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="20dp">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Which of these is not a Scrum event?"/>
+            android:layout_marginBottom="10dp"
+            android:text="@string/question1"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+
         <RadioGroup
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sprint Planning"/>
+                android:text="@string/question1_answer1"
+                android:textSize="16sp"/>
+
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Daily Scrum"/>
+                android:text="@string/question1_answer2"
+                android:textSize="16sp"/>
+
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Backlog Grooming"/>
+                android:text="@string/question1_answer3"
+                android:textSize="16sp"/>
+
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sprint Retrospective"/>
+                android:text="@string/question1_answer4"
+                android:textSize="16sp"/>
         </RadioGroup>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="What are the three pillars of Scrum?"/>
+            android:layout_marginBottom="10dp"
+            android:text="@string/question2"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+
         <RadioGroup
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Opacity, Honesty, Adaptability"/>
+                android:text="@string/question2_answer1"
+                android:textSize="16sp"/>
+
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Transparency, Inspection, Adaption"/>
+                android:text="@string/question2_answer2"
+                android:textSize="16sp"/>
+
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Transparency, Introversion, Reliability"/>
+                android:text="@string/question2_answer3"
+                android:textSize="16sp"/>
         </RadioGroup>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Which of these are Scrum values?"/>
+            android:layout_marginBottom="10dp"
+            android:text="@string/question3"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Courage"/>
+            android:text="@string/question3_answer1"
+            android:textSize="16sp"/>
+
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Commitment"/>
+            android:text="@string/question3_answer2"
+            android:textSize="16sp"/>
+
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Honesty"/>
+            android:text="@string/question3_answer3"
+            android:textSize="16sp"/>
+
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Focus"/>
+            android:layout_marginBottom="20dp"
+            android:text="@string/question3_answer4"
+            android:textSize="16sp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="This Scrum event is an opportunity for the Scrum Team to inspect itself, and plan improvements to be implemented during the next Sprint."/>
+            android:layout_marginBottom="10dp"
+            android:text="@string/question4"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+
         <EditText
-            android:layout_width="150dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:hint="retrospective"/>
+            android:layout_marginBottom="20dp"
+            android:textSize="16sp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="What is the prescribed time-box of the Daily Scrum meeting?"/>
+            android:layout_marginBottom="10dp"
+            android:text="@string/question5"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+
         <RadioGroup
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="20 minutes"/>
+                android:text="@string/question5_answer1"
+                android:textSize="16sp"/>
+
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="15 minutes"/>
+                android:text="@string/question5_answer2"
+                android:textSize="16sp"/>
+
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1 hour"/>
+                android:text="@string/question5_answer3"
+                android:textSize="16sp"/>
         </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/submit_quiz_button"
+            android:onClick="scoreQuiz"
+            android:textSize="16sp"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"/>
 
     </LinearLayout>
 

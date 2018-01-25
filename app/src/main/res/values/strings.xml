@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Scrum Quiz</string>
+    <string name="question1">Which of these is not a Scrum event?</string>
+    <string name="question1_answer1">Sprint Planning</string>
+    <string name="question1_answer2">Daily Scrum</string>
+    <string name="question1_answer3">Backlog Grooming</string>
+    <string name="question1_answer4">Sprint Retrospective</string>
+    <string name="question2">What are the three pillars of Scrum?</string>
+    <string name="question2_answer1">Opacity, Honesty, Adaptability</string>
+    <string name="question2_answer2">Transparency, Inspection, Adaption</string>
+    <string name="question2_answer3">Transparency, Introversion, Reliability</string>
+    <string name="question3">Which of these are Scrum values?</string>
+    <string name="question3_answer1">Courage</string>
+    <string name="question3_answer2">Commitment</string>
+    <string name="question3_answer4">Honesty</string>
+    <string name="question3_answer3">Focus</string>
+    <string name="question4">This Scrum event is an opportunity for the Scrum Team to inspect itself, and plan improvements to be implemented during the next Sprint.</string>
+    <string name="question5">What is the prescribed time-box of the Daily Scrum meeting?</string>
+    <string name="question5_answer1">20 minutes</string>
+    <string name="question5_answer2">15 minutes</string>
+    <string name="question5_answer3">1 hour</string>
+    <string name="submit_quiz_button">Submit</string>
 </resources>
