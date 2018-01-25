@@ -11,8 +11,8 @@
     <string name="question2_answer3">Transparency, Introversion, Reliability</string>
     <string name="question3">Which of these are Scrum values?</string>
     <string name="question3_answer1">Courage</string>
-    <string name="question3_answer2">Commitment</string>
-    <string name="question3_answer4">Honesty</string>
+    <string name="question3_answer2">Honesty</string>
+    <string name="question3_answer4">Commitment</string>
     <string name="question3_answer3">Focus</string>
     <string name="question4">This Scrum event is an opportunity for the Scrum Team to inspect itself, and plan improvements to be implemented during the next Sprint.</string>
     <string name="question5">What is the prescribed time-box of the Daily Scrum meeting?</string>
@@ -20,4 +20,6 @@
     <string name="question5_answer2">15 minutes</string>
     <string name="question5_answer3">1 hour</string>
     <string name="submit_quiz_button">Submit</string>
+    <string name="question_4_answer">retrospective</string>
+    <string name="learn_more_button">Learn More About Scrum</string>
 </resources>
