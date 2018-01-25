@@ -28,10 +28,17 @@ public class MainActivity extends AppCompatActivity {
 
     // This method calculates the users total score on the quiz.
     private void calculateQuizScore() {
+        int addPoints = 25;
         RadioButton question1_answer3 = findViewById(R.id.question1_answer3);
+        RadioButton question2_answer2 = findViewById(R.id.question2_answer2);
 
         if (question1_answer3.isChecked()) {
-            score += 25;
+            score += addPoints;
+            correctAnswers += 1;
+        }
+
+        if (question2_answer2.isChecked()) {
+            score += addPoints;
             correctAnswers += 1;
         }
     }
