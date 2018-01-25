@@ -40,6 +40,7 @@
                 android:textSize="16sp"/>
 
             <RadioButton
+                android:id="@+id/question1_answer3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question1_answer3"
@@ -203,9 +204,9 @@
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:text="@string/submit_quiz_button"
-            android:onClick="scoreQuiz"
+            android:onClick="showQuizScore"
             android:textSize="16sp"
-            android:background="@color/colorAccent"
+            android:background="#673AB7"
             android:textColor="@android:color/white"/>
 
     </LinearLayout>
