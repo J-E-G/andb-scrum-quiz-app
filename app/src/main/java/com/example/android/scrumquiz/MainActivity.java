@@ -33,19 +33,20 @@ public class MainActivity extends AppCompatActivity {
         score = 0; // reset the value back to 0 after user comes back from score view activity
         correctAnswers = 0;
         int addPoints = 20;
-        RadioButton question1_answer3 = findViewById(R.id.question1_answer3); // Question 1 Answer
-        RadioButton question2_answer2 = findViewById(R.id.question2_answer2); // Question 2 Answer
+        RadioButton question1_answer3 = findViewById(R.id.question1_answer3_rb); // Question 1 Answer
+        RadioButton question2_answer2 = findViewById(R.id.question2_answer2_rb); // Question 2 Answer
 
         /* Question 3 Answers */
-        CheckBox question3_answer1 = findViewById(R.id.question3_answer1);
-        CheckBox question3_answer3 = findViewById(R.id.question3_answer3);
-        CheckBox question3_answer4 = findViewById(R.id.question3_answer4);
+        CheckBox question3_answer1 = findViewById(R.id.question3_answer1_cb);
+        CheckBox question3_answer2 = findViewById(R.id.question3_answer2_cb);
+        CheckBox question3_answer3 = findViewById(R.id.question3_answer3_cb);
+        CheckBox question3_answer4 = findViewById(R.id.question3_answer4_cb);
 
         // Question 4 User Input
         EditText question4_user_input = findViewById(R.id.question4_answer_input);
         String question4_answer = question4_user_input.getText().toString();
 
-        RadioButton question5_answer2 = findViewById(R.id.question5_answer2); // Question 5 Answer
+        RadioButton question5_answer2 = findViewById(R.id.question5_answer2_rb); // Question 5 Answer
 
         // If Question 1 is correct, increment points and correct answer count
         if (question1_answer3.isChecked()) {
@@ -62,10 +63,11 @@ public class MainActivity extends AppCompatActivity {
         /* If Question 3 has the correct checkboxes selected, increment points and correct answer count.
         Points are only incremented on selection of the correct set of checkboxes */
 
-        if (question3_answer1.isChecked() && question3_answer3.isChecked() && question3_answer4.isChecked()) {
+        if (question3_answer1.isChecked() && !question3_answer2.isChecked() &&  question3_answer3.isChecked() && question3_answer4.isChecked()) {
             score += addPoints;
             correctAnswers += 1;
         }
+
 
         // If Question 4 is correct, increment points and correct answer count.
         if (question4_answer.equalsIgnoreCase(getString(R.string.question_4_answer))) {
