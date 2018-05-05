@@ -40,7 +40,7 @@
                 android:textSize="16sp" />
 
             <RadioButton
-                android:id="@+id/question1_answer3"
+                android:id="@+id/question1_answer3_rb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question1_answer3"
@@ -80,7 +80,7 @@
                 android:textSize="16sp" />
 
             <RadioButton
-                android:id="@+id/question2_answer2"
+                android:id="@+id/question2_answer2_rb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question2_answer2"
@@ -109,28 +109,28 @@
             android:textStyle="bold" />
 
         <CheckBox
-            android:id="@+id/question3_answer1"
+            android:id="@+id/question3_answer1_cb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/question3_answer1"
             android:textSize="16sp" />
 
         <CheckBox
-            android:id="@+id/question3_answer2"
+            android:id="@+id/question3_answer2_cb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/question3_answer2"
             android:textSize="16sp" />
 
         <CheckBox
-            android:id="@+id/question3_answer3"
+            android:id="@+id/question3_answer3_cb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/question3_answer3"
             android:textSize="16sp" />
 
         <CheckBox
-            android:id="@+id/question3_answer4"
+            android:id="@+id/question3_answer4_cb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
@@ -186,7 +186,7 @@
                 android:textSize="16sp" />
 
             <RadioButton
-                android:id="@+id/question5_answer2"
+                android:id="@+id/question5_answer2_rb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question5_answer2"
