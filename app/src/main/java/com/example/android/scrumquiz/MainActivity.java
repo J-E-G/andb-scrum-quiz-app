@@ -23,9 +23,17 @@ public class MainActivity extends AppCompatActivity {
     public void showQuizScore(View view) {
         calculateQuizScore();
         Intent intent = new Intent(this, DisplayScoreActivity.class);
-        String message = "You scored " + score + " points by answering " + correctAnswers + " out of 5 questions correctly.";
-        intent.putExtra(EXTRA_MESSAGE, message);
-        startActivity(intent);
+
+        if (score > 60) {
+            String message = "You scored " + score + " points by answering " + correctAnswers + " out of 5 questions correctly. AMAZING!";
+            intent.putExtra(EXTRA_MESSAGE, message);
+            startActivity(intent);
+        } else {
+            String message = "You scored " + score + " points by answering " + correctAnswers + " out of 5 questions correctly. Check out the Scrum Guide and try again.";
+            intent.putExtra(EXTRA_MESSAGE, message);
+            startActivity(intent);
+        }
+
     }
 
     // This method calculates the users total score on the quiz.
